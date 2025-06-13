@@ -21,6 +21,7 @@ linux-system-management-3/
 ├── README.md
 ├── outputs/
 │   ├── 01-sshd-status.txt
+│   ├── 01b-sshd-port-check.txt
 │   ├── 02-sshd-config.txt
 │   ├── 03-pxe-theory.txt
 │   ├── 04-resolv-nsswitch.txt
@@ -42,9 +43,11 @@ linux-system-management-3/
 ```bash
 sudo systemctl status sshd
 sudo ss -tuln | grep :22
+sudo lsof -i :22
 ```
 
 📄 [`01-sshd-status.txt`](outputs/01-sshd-status.txt)  
+📄 [`01b-sshd-port-check.txt`](outputs/01b-sshd-port-check.txt)  
 📷 ![01-sshd-status](screenshots/01-sshd-status.png)
 
 ---
@@ -100,14 +103,15 @@ nslookup google.com
 
 ## ✅ Summary
 
-This project demonstrates Linux+ exam topics for securing and verifying SSH, understanding PXE boot concepts, and managing DNS resolution. All outputs and screenshots reflect real terminal execution and audit-worthy configuration.
+This project demonstrates Linux+ exam topics for securing and verifying SSH, understanding PXE boot concepts, and managing DNS resolution.  
+All outputs and screenshots reflect real terminal execution and audit-worthy configuration.
 
 ---
 
 ## 🎯 Linux+ Portfolio Completed
 
-✅ `linux-system-management-1`  
-✅ `linux-system-management-2`  
-✅ `linux-system-management-3`
+✅ [`linux-system-management-1`](https://github.com/carlos-tech-ops/linux-system-management-1)  
+✅ [`linux-system-management-2`](https://github.com/carlos-tech-ops/linux-system-management-2)  
+✅ [`linux-system-management-3`](https://github.com/carlos-tech-ops/linux-system-management-3)
 
 Each project reflects real-world readiness and hands-on verification.
