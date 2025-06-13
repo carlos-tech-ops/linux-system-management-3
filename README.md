@@ -46,8 +46,6 @@ sudo ss -tuln | grep :22
 sudo lsof -i :22
 ```
 
-📄 [`01-sshd-status.txt`](outputs/01-sshd-status.txt)  
-📄 [`01b-sshd-port-check.txt`](outputs/01b-sshd-port-check.txt)  
 📷 ![01-sshd-status](screenshots/01-sshd-status.png)
 
 ---
@@ -58,7 +56,6 @@ sudo lsof -i :22
 sudo grep -Ei 'permitrootlogin|passwordauthentication|port' /etc/ssh/sshd_config
 ```
 
-📄 [`02-sshd-config.txt`](outputs/02-sshd-config.txt)  
 📷 ![02-sshd-config](screenshots/02-sshd-config.png)
 
 ---
@@ -71,7 +68,6 @@ Create a markdown or text file summarizing:
 - How DHCP and TFTP are used
 - The boot process sequence
 
-📄 [`03-pxe-theory.txt`](outputs/03-pxe-theory.txt)  
 📷 ![03-pxe-theory](screenshots/03-pxe-theory.png)
 
 ---
@@ -83,7 +79,6 @@ cat /etc/resolv.conf
 cat /etc/nsswitch.conf | grep hosts
 ```
 
-📄 [`04-resolv-nsswitch.txt`](outputs/04-resolv-nsswitch.txt)  
 📷 ![04-resolv-nsswitch](screenshots/04-resolv-nsswitch.png)
 
 ---
@@ -96,7 +91,6 @@ dig google.com +short
 nslookup google.com
 ```
 
-📄 [`05-dns-tools-output.txt`](outputs/05-dns-tools-output.txt)  
 📷 ![05-dns-tools-output](screenshots/05-dns-tools-output.png)
 
 ---
